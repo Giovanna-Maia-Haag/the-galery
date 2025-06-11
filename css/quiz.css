@@ -1,0 +1,181 @@
+.container-introducao-quiz {
+    height: 20rem;
+    background: url('../images-Gogh/Farmhouse-in-Provence-1888-Van-Gogh.jpg');
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.div-pro-filter {
+    width: 100%;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.301);
+    position: absolute;
+    z-index: 2;
+}
+.container-introducao-quiz__titulo-quiz {
+    font-size: 6.5rem;
+    z-index: 3;
+    font-family: var(--fonte-titulo);
+    color: beige;
+}
+.container-introducao-quiz__texto-quiz {
+    font-family: var(--fonte-titulo);
+    font-size: 3.5rem;
+    color: beige;
+    z-index: 3;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+.hidden {
+    display: none;
+}
+.container-quiz {
+    height: 60rem;
+    background-color: var(--cor-mais-escura);
+    width: 60%;
+    margin: 2rem 0;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+   
+}
+.container-quiz__tela-visivel {
+    width: 90%;
+    height: 85%;
+    background: url('../images.Monet/Monet.obra.Water-Lily-Pond-1899.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.tela-visivel__texto {
+    color: beige;
+    padding: 1rem;
+    font-size: 2.5rem;
+    background-color: rgb(63, 121, 89);
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--fonte-texto);
+}
+.tela-visivel__botao {
+    width: 9rem;
+    height: 9rem;
+    background: url(../botao-play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--cor-mais-escura);
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+.container-quiz__telas4 {
+    display: none;
+    width: 90%;
+    height: 85%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.telas4__texto {
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--fonte-texto);
+    color: var(--preto);
+    padding: 2rem;
+}
+.telas4__container-telas4 {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-telas4__botao1, .container-telas4__botao2, 
+.container-telas4__botao3, .container-telas4__botao4 {
+    width: 50%;
+    height: 50%;
+}
+.container-telas4__botao1 {
+    background-image: url('../images-Gogh/Van_Gogh-Starry_Night.jpg');
+    background-size: cover;
+}
+.container-telas4__botao2 {
+    background-image: url('../images.edvard/the-Scream-edvard-munch.jpg');
+    background-size: cover;
+    background-position: 60%;
+}
+.container-telas4__botao3 {
+    background-image: url('../images.Monet/Monet.obra.Water-Lily-Pond-1899.jpg');
+    background-size: cover;
+}
+.container-telas4__botao4 {
+    background-image: url('../images.Vinci/Última_CenaII-Da-Vinci.jpg');
+    background-size: cover;
+}
+.texto-quiz-fase3 {
+    display: none;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    color: black;
+    background-color: white;
+    font-size: 1.8rem;
+    
+}
+.imagem-unica {
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.refazer-quiz {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    border: none;
+    background-color: var(--cor-mais-clara);
+    color: var(--preto);
+}
+/* ------------------------------------------------------------------------------------------------------ */
+.container-mestres {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    padding: 2rem;
+    margin: 5rem;
+    width: auto;
+}
+.container-mestres__img {
+    float: left;
+    flex-shrink: 0;
+    width: 25rem;
+    height: 30rem;
+    margin: 0 1rem 1rem 0;
+}
+h4 {
+
+    font-size: 4.5rem;
+    font-family: var(--fonte-titulo);
+    padding: 1rem;
+    color: var(--cor-mais-escura);
+}
+.container-mestres__texto {
+    flex: 1;
+}
+.container-mestres__texto p {
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    padding-bottom: 1rem;
+}

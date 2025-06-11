@@ -1,0 +1,324 @@
+/* H E A D E R*/
+header {
+    background-color: var(--cor-mais-escura);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.cabecalho {
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    height: 6rem;
+    padding: 2rem;
+
+}
+.cabecalho:hover {
+    background-color: var(--header-hover);
+    transition: 0.3s;
+}
+.cabecalho-autora {
+    background-color:rgb(158, 157, 96) ;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/* W E L L C O M E   S L I D E S*/
+.darkmodebtn {
+    align-self: center;
+    height: 5rem;
+    width: 5rem;
+    justify-self: center;
+    z-index: 9997;
+    padding: 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 50%;
+    left: 90%;
+    cursor: pointer;
+}
+.wellcome {
+    display: flex;
+    flex-direction: row;
+    max-height: 30.0rem;
+    width: fit-content;
+    overflow:hidden;
+    justify-content: flex-start;
+    animation: scroll 20s linear infinite ;
+    
+}
+.wellcome-text {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 30.0rem;
+    align-items: center;
+    justify-content: center;
+}
+.wellcome-text__wellcome__title {
+    position: relative;  
+    z-index: 9997;
+    font-size: 6.5rem;
+    font-family: var(--fonte-titulo);
+    align-self: center;
+    color: beige;
+    
+}
+.wellcome__images {
+    object-fit: cover;
+    filter: brightness(0.6);
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-20.0rem *6));
+    }
+}
+/* S E C A O    S O B R E  */
+/* ------------------------------------------------------------------------------------------------------- */
+/* CARDS */
+.secao-sobre {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+}
+.secao-sobre__card {
+    height: 40.0rem;
+    width: 20.0rem;
+    background-color: var(--cor-mais-clara);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__card-autor {
+    height: 20.0rem;
+    width: 20.0rem;
+}
+.card-autor__secao-texto-card {
+    padding-bottom: 1rem;
+    width: 20.0rem;
+    height: 10.0rem;
+    overflow: hidden;
+    color: var(--preto);
+}
+.secao-texto-card__texto {
+    font-size: 1.6rem;
+    padding: 1rem;
+
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/* BOTOES PREV E NEXT DOS CARDS */
+.button-ler-mais {
+    width: 9rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-mais-escura);
+    color: var(--preto);
+    border: none;
+    margin-top: 2.5rem;
+
+
+}
+/* .carrossel-prev, .carrossel-next {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.315);
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 2;
+    font-size: 4rem;
+}
+.carrossel-prev {
+    right: 96%;
+}
+.carrossel-next {
+    left: 96%;
+} */
+/* ------------------------------------------------------------------------------------------------------- */
+/* DEPOIS BOTAO CLICADO */
+.after-ler-mais {
+    width: 30vw;
+    height: 90vh;
+    padding: 1rem;
+    background-color:var(--cor-mais-clara);
+    display: flex;
+    margin: auto;
+    top: 5%;
+    left: 10;
+    position: fixed;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+    z-index: 9999;
+    overflow-y: scroll;
+}
+#after-btn {
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: beige;
+    background-color: var(--cor-mais-escura);
+    cursor: pointer;
+}
+#after-img{
+    width: 25rem;
+    height: 25rem;
+
+}
+#after-texto {
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    padding: 1rem;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* SELECT ARTIST */
+
+.select-artist {
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-mais-escura);
+}
+.select-artist__selecionar {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    text-align: center;
+    border: none;
+}
+.select-artist__texto {
+    font-family: var(--fonte-titulo);
+    color: rgb(255, 255, 255);
+    font-size: 4.5rem;
+    padding-right: 2rem;
+}
+
+#select-artist__button {
+    border: none;
+    margin-left: 2rem;
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    text-align: center;
+}
+.hidden {
+    display: none !important;
+}
+/* GALERIA */
+/* ------------------------------------------------------------------------------------------------------- */
+.secao-galeria {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
+  }
+
+
+ .secao-galeria__obras, .gogh-img, .monet-img, .ed-img, .eugine-img, .vinci-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: flex;
+    position: relative;
+    pointer-events: auto;
+  }
+.secao-galeria__obras {
+    transition: transform 0.3s;
+  }
+.secao-galeria__obras:hover {
+    transform: scale(1.2);
+    z-index: 9999; 
+    pointer-events: auto;
+}
+.download {
+    width: 15%;
+    height: auto;
+    z-index: 9998;
+    position: absolute;
+    align-self: flex-end;
+    right: 15%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .download-img {
+    width: 100%;
+    height: auto;
+    z-index: 9998;
+    position: relative; 
+  }
+
+.coracao-png {
+    width: 15%;
+    height: 15%;
+    z-index: 9998;
+    position: absolute;
+    align-self: flex-end;
+    right: 0;
+    cursor: pointer;
+    background-color: white;
+    pointer-events: auto;
+}
+.fullscreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+  }
+  
+.fullscreenImg {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 20px black;
+  }
+.fullscreenX {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+/* -------------------------------------------------------------------------------------------------------- */
+.rodape {
+    height: 7rem;
+    background-color: var(--cor-mais-escura);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rodape__github {
+    font-size: 1.6rem;
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+}

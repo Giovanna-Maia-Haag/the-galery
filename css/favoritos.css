@@ -1,0 +1,23 @@
+.div-titulo-favoritos {
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: var(--preto);
+    font-family: var(--fonte-titulo);
+    font-size: 4.5rem;
+}
+.container-obras-favoritas {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
+}
+.container-obras-favoritas__obra {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}

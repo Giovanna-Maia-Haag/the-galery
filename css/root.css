@@ -1,0 +1,45 @@
+@import url("../css/principal.css");
+@import url("../css/favoritos.css");
+@import url("../css/quiz.css");
+@import url("../css/autora.css");
+@import url("../css/medias.css");
+@import url("../script.js");
+@import url("../favoritos.js");
+@import url("../quiz.js");
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+:root {
+    --fonte-principal:"Playfair Display";
+    --fonte-titulo:"Allura", sans-serif;
+    --preto : rgb(0, 0, 0);
+    --cor-mais-clara: beige;
+    --cor-mais-escura: rgb(190, 190, 130);
+    --cor-media: rgb(237, 238, 183);
+    --header-hover: rgb(179, 179, 122);
+  }
+body.darkmode {
+    --fonte-principal:"Playfair Display";
+    --fonte-titulo:"Allura", sans-serif;
+    --preto : white;
+    --cor-mais-clara: rgb(156, 156, 122);
+    --cor-mais-escura: rgb(46, 46, 32);
+    --cor-media: rgb(105, 105, 82);
+    --header-hover: rgb(179, 179, 122);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size:62.5%; /* 10 px = 1 rem */
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--cor-media);
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,43 @@
+
+@media screen and (max-width:950px) {
+    .after-ler-mais {
+        width:80vw;
+        height: auto;
+        gap: 2rem;
+        padding-bottom: 4rem;
+    }
+    .container-quiz {
+        width: 100%;
+    }
+    .container-mestres {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin: auto;
+    }
+    .container-mestres__img {
+        float: none;
+        width: 80%;
+        height: auto;
+    }
+    h4 {
+        font-size: 5.5rem;
+        text-align: center;
+    }
+    .container-mestres__texto p {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .after-ler-mais {
+        width:100vw;
+    }
+    .select-artist {
+        align-self: center;
+        display: flex;
+        flex-direction:column;
+       gap: 1rem;
+       text-align: center;
+    }
+}
