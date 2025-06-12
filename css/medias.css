@@ -52,6 +52,18 @@
         max-width: 70vw;
     }
 }
+@media screen and (max-width:660px) {
+    .select-artist {
+        padding: 1rem 0;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    #select-artist__button {
+        width: 20rem;
+        margin: 0;
+    }
+}
 @media screen and (max-width:500px) {
     body {
         overflow-x: hidden;
