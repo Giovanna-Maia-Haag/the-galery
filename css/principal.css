@@ -157,7 +157,7 @@ header {
     display: flex;
     margin: auto;
     top: 5%;
-    left: 10;
+    align-self: center;
     position: fixed;
     flex-direction: column;
     flex-shrink: 1;
