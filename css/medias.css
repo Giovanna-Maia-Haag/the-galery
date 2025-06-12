@@ -11,6 +11,11 @@
         pointer-events: none;
     }
 }
+@media screen and (max-width:1042px) {
+    .secao-sobre {
+        justify-content: flex-start;
+    }
+}
 @media screen and (max-width:950px) {
     .after-ler-mais {
         width:80vw;
