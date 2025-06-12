@@ -18,7 +18,7 @@ header {
     transition: 0.3s;
 }
 .cabecalho-autora {
-    background-color:rgb(158, 157, 96) ;
+    background-color:rgb(158, 138, 96) ;
 }
 /* -------------------------------------------------------------------------------------------------------- */
 /* W E L L C O M E   S L I D E S*/
@@ -286,8 +286,7 @@ header {
 .fullscreen {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.85);
